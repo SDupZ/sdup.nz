@@ -1,0 +1,81 @@
+
+// /*------------------------------------*\
+//     $ COLORS
+// \*------------------------------------*/
+
+$white: #fff;
+$black: #000;
+
+$greyBg: #F9F9F9;
+
+
+$primaryAccent: #337ab7;
+$primaryAccent--light: #5393C8;
+
+
+$bgBlue: #BBDEFB;
+$bgGreen: #C8E6C9;
+$bgMagenta: #D1C4E9;
+$bgWhite: #F5F5F5;
+$bgYellow: #FFF9C4;
+
+$grey--lighter: #F5F5F5;
+$grey--light: #E0E0E0;
+$grey: #666666;
+
+$dark: #424242;
+$grey--charcoal: #4c4c4c;
+
+$orange: #FF9800;
+
+$green--deep: #297F7A;
+
+$darkBlue: #071B47;
+
+$bgNav: #000;
+
+// /*------------------------------------*\
+//     $ TEMPLATE COLORS
+// \*------------------------------------*/
+
+// /*------------------------------------*\
+//     $ LINKS
+// \*------------------------------------*/
+
+// /*------------------------------------*\
+//     $ TEMPLATE SETTINGS
+// \*------------------------------------*/
+
+// /*------------------------------------*\
+//     $ FONTS
+// \*------------------------------------*/
+
+// /*------------------------------------*\
+//     $ CSS WIZARDY-GRIDS
+// \*------------------------------------*/
+$gutter: 26px;
+
+$breakpoints: (
+    'less-mobile': '(max-width: 479px)',
+    'mobile': '(min-width: 480px)',
+    'less-tablet': '(max-width: 767px)',
+    'tablet': '(min-width: 768px)',
+    'less-desktop': '(max-width: 1023px)',
+    'desktop': '(min-width: 1024px)',
+    'less-wide': '(max-width: 1149px)',
+    'wide': '(min-width: 1150px)',
+    'less-full': '(max-width: 1599px)',
+    'full': '(min-width: 1600px)',
+
+    // custom breakpoints
+    'wide-menu': '(min-width: 1670px)'
+);
+
+// Make Breakpoints available in the grid system. Is used also for hiding
+$push: true;
+$pull: false;
+$breakpoint-has-widths: ('less-mobile', 'mobile', 'less-tablet', 'tablet', 'less-desktop', 'desktop', 'less-wide', 'wide', 'less-full', 'full');
+$breakpoint-has-push:   ('tablet', 'desktop', 'wide');
+$breakpoint-has-pull:   ();
+$print: true;
+$hide: true;

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main-content %}
+
+    {# Jumbotron #}
+    <div class="homepage-section-jumbotron"
+        style="background-image: linear-gradient(to top right, rgba(51,122,183, 0.5), rgba(0, 0, 0, 0.7)), url({% static 'img/fallback/blog-header.jpg' %});">
+        <h1>Blogs and News</h1>
+        <p>Come here for all news, tips and updates. =)</p>
+
+    </div>
+
+{% endblock main-content %}
