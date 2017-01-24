@@ -4,7 +4,7 @@
 
 `docker run -it -v c:/Users/Simon/development/lunchchat:/srv/www/lunchchat/lunchchat -p 8003 --name lunchchat sdupz/lunchchat`
 `docker run -it -v ~/development/lunchchat:/srv/www/lunchchat/lunchchat -p 8000 --name lunchchat sdupz/lunchchat`
-`docker run -it -v ~/development/sdup/lunchchat:/srv/www/lunchchat/lunchchat -p 8000-8050:80 -e VIRTUAL_HOST=lunchchat.dev --name lunchchat sdupz/lunchchat`
+`docker run -it -v ~/sdup/lunchchat:/srv/www/lunchchat/lunchchat -p 8000-8050:80 -e VIRTUAL_HOST=lunchchat.dev --name lunchchat sdupz/lunchchat`
 >>>>>>> 51bf9c97b4c9bad5977a73a91341a778110c9fed
 
 ### Sass Compiler

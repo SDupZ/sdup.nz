@@ -4,6 +4,8 @@ from os.path import join
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+VIRTUALENV_ROOT = os.path.dirname(BASE_DIR)
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
@@ -27,7 +29,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Vendor
+    'ckeditor',
+    'easy_thumbnails',
+    'filer',
+    'mptt',
+
+    # Custom
     'default',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -115,6 +125,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_ROOT = join(VIRTUALENV_ROOT, 'public-www/media')
+MEDIA_URL = '/media/'
+
+THUMBNAIL_HIGH_RESOLUTION = True
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
