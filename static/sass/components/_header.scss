@@ -20,10 +20,6 @@
     }
 }
 
-.hamburger-inner--white-nav, .hamburger-inner--white-nav:before, .hamburger-inner--white-nav:after {
-    background-color: $primaryAccent;
-}
-
 .nav {
     display: none;
 
@@ -68,10 +64,7 @@
 }
 
 .navbar-slogan {
-    display: none;
-    @include respond-to(desktop) {
-        display: block;
-    }
+    display: block;
 }
 
 .navbar-logo {

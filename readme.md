@@ -3,7 +3,6 @@
 ### New Container
 
 `docker run -it -v c:/Users/Simon/development/blogsite:/srv/www/blogsite/blogsite -p 8003 --name blogsite sdupz/blogsite`
-`docker run -it -v ~/development/blogsite:/srv/www/blogsite/blogsite -p 8000 --name blogsite sdupz/blogsite`
 `docker run -it -v ~/sdup/blogsite:/srv/www/blogsite/blogsite -p 8000-8050:80 -e VIRTUAL_HOST=blogsite.dev --name blogsite sdupz/blogsite`
 
 ### Sass Compiler

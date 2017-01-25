@@ -1,8 +1,6 @@
 .homepage-section-jumbotron {
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	margin-bottom:0;
+    background-color: $primary;
+	margin-bottom: 0;
 	position: relative;
 
     height: 500px;
@@ -11,16 +9,8 @@
 	flex-direction: column;
 	justify-content: center;
 
-
-	h1, p {
-		color: $white;
-	}
-
-	h1 {
-		padding:10px;
-	}
-
 	p {
+        color: $white;
 		margin-top: 0;
 	}
 }

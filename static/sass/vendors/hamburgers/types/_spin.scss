@@ -23,8 +23,10 @@
         transform: rotate(225deg);
         transition-delay: 0.14s;
         transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        background-color: $hamburger-layer-color-active;
 
         &::before {
+          background-color: $hamburger-layer-color-active;
           top: 0;
           opacity: 0;
           transition: top 0.1s ease-out,
@@ -32,6 +34,7 @@
         }
 
         &::after {
+          background-color: $hamburger-layer-color-active;
           bottom: 0;
           transform: rotate(-90deg);
           transition: bottom 0.1s ease-out,

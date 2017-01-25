@@ -16,7 +16,9 @@ SECRET_KEY = '6t_!#2z6gibm-!aj$m4f_-hkw+hhw09d&+)as)nmhtzg%d6b8z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'blogsite.dev',
+]
 
 
 # Application definition
