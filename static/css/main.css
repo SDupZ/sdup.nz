@@ -2454,6 +2454,8 @@ html {
 body {
   margin: 0;
   font-family: 'Oxygen', sans-serif; }
+  body p {
+    font: normal 15px/1.9em 'Merriweather', Georgia, serif; }
 
 .container {
   max-width: 1140px;
@@ -2779,8 +2781,10 @@ div.menu li.animate {
   font-size: 2em;
   font-weight: 400;
   line-height: 36px;
-  color: #fff;
+  color: #000;
   margin: 55px auto; }
+  .heading__page--white {
+    color: #fff; }
 
 .heading__content {
   display: block;
@@ -2872,3 +2876,18 @@ p {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 100px; }
+
+.page {
+  overflow: auto;
+  background-color: #f9f9f9;
+  min-height: 90vh; }
+
+.blog__content {
+  overflow: auto;
+  background: white;
+  border-radius: 3px;
+  margin: 60px auto;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-bottom: 26px; }

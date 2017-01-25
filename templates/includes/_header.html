@@ -24,7 +24,9 @@
             </a>
             {% endcomment %}
 
-            <a href="#" class="navbar-slogan">Blogsite</a>
+            <a href="{% url 'front' %}" class="navbar-slogan">Blogsite</a>
+
+            {% comment %}
             <nav class="nav">
                 <!-- Desktop -->
                 <ul class="nav__list">
@@ -35,6 +37,7 @@
 
                 </ul>
             </nav>
+            {% endcomment %}
         </div>
     </div>
 </div>

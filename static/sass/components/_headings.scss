@@ -3,8 +3,12 @@
     font-size: 2em;
     font-weight: 400;
     line-height: 36px;
-    color: $white;
+    color: $black;
     margin: 55px auto;
+
+    &--white {
+        color: $white;
+    }
 }
 
 
@@ -48,7 +52,7 @@
       content: "";
       position: absolute;
       height: 2px;
-      border-bottom: 1px solid $grey--lighest;
+      border-bottom: 1px solid $grey--lighter-2;
       top: 0;
       width: 30px;
 }
