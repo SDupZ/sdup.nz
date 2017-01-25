@@ -1,11 +1,10 @@
-# Mairangi Bay Tennis Club
+# Blogsite
 
 ### New Container
 
-`docker run -it -v c:/Users/Simon/development/lunchchat:/srv/www/lunchchat/lunchchat -p 8003 --name lunchchat sdupz/lunchchat`
-`docker run -it -v ~/development/lunchchat:/srv/www/lunchchat/lunchchat -p 8000 --name lunchchat sdupz/lunchchat`
-`docker run -it -v ~/sdup/lunchchat:/srv/www/lunchchat/lunchchat -p 8000-8050:80 -e VIRTUAL_HOST=lunchchat.dev --name lunchchat sdupz/lunchchat`
->>>>>>> 51bf9c97b4c9bad5977a73a91341a778110c9fed
+`docker run -it -v c:/Users/Simon/development/blogsite:/srv/www/blogsite/blogsite -p 8003 --name blogsite sdupz/blogsite`
+`docker run -it -v ~/development/blogsite:/srv/www/blogsite/blogsite -p 8000 --name blogsite sdupz/blogsite`
+`docker run -it -v ~/sdup/blogsite:/srv/www/blogsite/blogsite -p 8000-8050:80 -e VIRTUAL_HOST=blogsite.dev --name blogsite sdupz/blogsite`
 
 ### Sass Compiler
 

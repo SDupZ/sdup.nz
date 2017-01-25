@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'lunchchat.urls'
+ROOT_URLCONF = 'blogsite.urls'
 
 TEMPLATES = [
     {
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'lunchchat.wsgi.application'
+WSGI_APPLICATION = 'blogsite.wsgi.application'
 
 
 # Database
