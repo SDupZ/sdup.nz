@@ -45,7 +45,7 @@ ADD requirements.txt /tmp/
 RUN pip install -r /tmp/requirements.txt
 
 
-WORKDIR /srv/www/blogsite/blogsite
+WORKDIR /srv/www/sdupnz/sdupnz
 
 ADD start.sh /root/start.sh
 RUN chmod +x /root/start.sh

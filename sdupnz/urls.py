@@ -3,14 +3,14 @@ from django.contrib import admin
 from django.views.static import serve
 
 from django.conf import settings
-from default.views import front
+from default.views import home
 from blog.views import blog
 
 from filer.models import Folder, ThumbnailOption
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', front, name='front'),
+    url(r'^$', home, name='home'),
 
     url(r'^blog/(?P<slug>[^/]+)$', blog, name='blog'),
 

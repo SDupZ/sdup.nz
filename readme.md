@@ -1,9 +1,9 @@
-# Blogsite
+# sdup.nz
 
 ### New Container
 
-`docker run -it -v c:/Users/Simon/development/blogsite:/srv/www/blogsite/blogsite -p 8003 --name blogsite sdupz/blogsite`
-`docker run -it -v ~/sdup/blogsite:/srv/www/blogsite/blogsite -p 8000-8050:80 -e VIRTUAL_HOST=blogsite.dev --name blogsite sdupz/blogsite`
+`docker run -it -v c:/Users/Simon/development/sdup.nz:/srv/www/sdupnz/sdupnz -p 8003 --name sdupnz sdupz/sdupnz`
+`docker run -it -v ~/sdup/sdup.nz:/srv/www/sdupnz/sdupnz -p 8000-8050:80 -e VIRTUAL_HOST=sdup.dev --name sdupnz sdupz/sdupnz`
 
 ### Sass Compiler
 

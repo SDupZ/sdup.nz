@@ -17,7 +17,7 @@ SECRET_KEY = '6t_!#2z6gibm-!aj$m4f_-hkw+hhw09d&+)as)nmhtzg%d6b8z'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'blogsite.dev',
+    'sdup.dev',
 ]
 
 
@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'blogsite.urls'
+ROOT_URLCONF = 'sdupnz.urls'
 
 TEMPLATES = [
     {
@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'blogsite.wsgi.application'
+WSGI_APPLICATION = 'sdupnz.wsgi.application'
 
 
 # Database
