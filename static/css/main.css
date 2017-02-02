@@ -2661,10 +2661,7 @@ body {
   width: 100%; }
   .navbar a {
     text-decoration: none;
-    color: #fff;
-    padding: 8px; }
-    .navbar a:hover {
-      text-decoration: underline; }
+    color: #fff; }
 
 .navbar--white {
   border-bottom: 1px solid #EEEEEE;
@@ -2691,6 +2688,29 @@ body {
   align-self: center; }
   .nav__list .nav__item {
     display: inline; }
+
+.hover-link {
+  position: relative;
+  text-decoration: none; }
+
+.hover-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.15s ease-in-out 0s;
+  transition: all 0.15s ease-in-out 0s; }
+
+.hover-link:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
 
 .jumbotron {
   background-image: linear-gradient(to top right, rgba(51, 122, 183, 0.5), rgba(0, 0, 0, 0.7));
