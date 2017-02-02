@@ -2,7 +2,7 @@
 
 ### New Container
 
-`docker run -it -v c:/Users/Simon/development/sdup.nz:/srv/www/sdupnz/sdupnz -p 8003 --name sdupnz sdupz/sdupnz`
+`docker run -it -v c:/Users/Simon/development/sdup.nz:/srv/www/sdupnz/sdupnz -p 8000-8050:80 -e VIRTUAL_HOST=sdup.dev --name sdupnz sdupz/sdupnz`
 `docker run -it -v ~/sdup/sdup.nz:/srv/www/sdupnz/sdupnz -p 8000-8050:80 -e VIRTUAL_HOST=sdup.dev --name sdupnz sdupz/sdupnz`
 
 ### Sass Compiler

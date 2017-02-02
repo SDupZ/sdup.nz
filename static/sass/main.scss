@@ -13,17 +13,19 @@
 
 // Components
 @import 'components/blog-tile';
-@import 'components/header';
-@import 'components/footer';
-@import 'components/menu';
+@import 'components/card';
 @import 'components/dividers';
+@import 'components/footer';
 @import 'components/headings';
+@import 'components/header';
+@import 'components/jumbotron';
+@import 'components/menu';
 @import 'components/text';
 
 // Pages
-@import 'pages/homepage';
-@import 'pages/default';
 @import 'pages/blog';
+@import 'pages/default';
+@import 'pages/homepage';
 
 // It's a shame to put code here !
 @import 'shame';
