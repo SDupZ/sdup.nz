@@ -2539,6 +2539,7 @@ body {
 
 .footer__container {
   margin-top: 30px;
+  margin-bottom: 30px;
   display: flex; }
 
 .footer__item-group {

@@ -16,15 +16,11 @@
 
     <div class="container">
         <div class="grid grid--center">
-              <div class="grid__item one-whole mobile--one-half">
-                  {% include 'includes/_portfolio-tile.html' with title='test' blurb='test' %}
-              </div>
-              <div class="grid__item one-whole mobile--one-half">
-                  {% include 'includes/_portfolio-tile.html' with title='test' blurb='test' %}
-              </div>
-              <div class="grid__item one-whole mobile--one-half">
-                  {% include 'includes/_portfolio-tile.html' with title='test' blurb='test' %}
-              </div>
+            {% for project in projects %}
+                <div class="grid__item one-whole tablet--one-half">
+                    {% include 'includes/_portfolio-tile.html' with img=project.icon.url  title=project.title blurb=project.blurb date=project.created|date:'N d, Y' slug=project.slug %}
+                </div>
+            {% endfor %}
         </div>
     </div>
 

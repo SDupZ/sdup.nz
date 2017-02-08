@@ -24,14 +24,14 @@
             </a>
             {% endcomment %}
 
-            <a href="{% url 'home' %}" class="navbar-slogan hover-link {% if color == 'white' %}hover-link--red{% endif %}">Simon du Preez</a>
+            <a href="{% url 'home' %}" class="navbar-slogan hover-link {% if color == 'white' %}hover-link--color{% endif %}">Simon du Preez</a>
 
             <nav class="nav">
                 <!-- Desktop -->
                 <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__item__content hover-link {% if color == 'white' %}hover-link--red{% endif %}" href="{% url 'blogs_list' %}">Blog</a></li>
+                    <li class="nav__item"><a class="nav__item__content hover-link {% if color == 'white' %}hover-link--color{% endif %}" href="{% url 'blogs_list' %}">Blog</a></li>
                     <li class="nav__item divider-vertical"></li>
-                    <li class="nav__item"><a class="nav__item__content hover-link {% if color == 'white' %}hover-link--red{% endif %}" href="">Contact</a></li>
+                    <li class="nav__item"><a class="nav__item__content hover-link {% if color == 'white' %}hover-link--color{% endif %}" href="">Contact</a></li>
                 </ul>
             </nav>
         </div>

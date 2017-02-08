@@ -23,8 +23,8 @@
     transition: all 0.15s ease-in-out 0s;
 }
 
-.hover-link--red:before {
-    background-color: $bloodRed;
+.hover-link--color:before {
+    background-color: $primary;
 }
 
 .hover-link:hover:before {

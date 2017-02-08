@@ -1,12 +1,12 @@
 from django.shortcuts import render
-from blog.models import BlogPost
+from projects.models import Project
 
 
 def home(request):
     template = 'index.html'
-    blogs = BlogPost.objects.all()
+    projects = Project.objects.all()
 
     context = {
-        "blogs": blogs,
+        "projects": projects,
     }
     return render(request, template, context)

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     # Custom
     'default',
     'blog',
+    'projects',
 ]
 
 MIDDLEWARE = [
