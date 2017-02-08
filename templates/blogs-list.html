@@ -17,7 +17,7 @@
             <div class="grid grid--center">
                 {% for blog in blogs %}
                     <div class="grid__item one-whole mobile--one-half desktop--one-third">
-                        {% include 'includes/_news-tile.html' with img=blog.header_image.url  title=blog.title blurb=blog.blurb date=blog.created|date:'N d, Y' slug=blog.slug %}
+                        {% include 'includes/_blog-tile.html' with img=blog.header_image.url  title=blog.title blurb=blog.blurb date=blog.created|date:'N d, Y' slug=blog.slug %}
                     </div>
                 {% endfor %}
             </div>

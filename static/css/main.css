@@ -2538,6 +2538,7 @@ body {
   color: #72808E; }
 
 .footer__container {
+  margin-top: 30px;
   display: flex; }
 
 .footer__item-group {
@@ -2698,7 +2699,7 @@ body {
   position: absolute;
   width: 100%;
   height: 2px;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   background-color: #fff;
   visibility: hidden;
@@ -2706,6 +2707,9 @@ body {
   transform: scaleX(0);
   -webkit-transition: all 0.15s ease-in-out 0s;
   transition: all 0.15s ease-in-out 0s; }
+
+.hover-link--red:before {
+  background-color: #c44736; }
 
 .hover-link:hover:before {
   visibility: visible;
