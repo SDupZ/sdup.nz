@@ -1,0 +1,22 @@
+.contact-card {
+    color: $black;
+    text-align: justify;
+    display: block;
+    text-decoration: none;
+
+    .contact-text {
+        text-align: center;
+        padding: 20px;
+        align-self: center;
+    }
+
+    .contact-img {
+        display: flex;
+        justify-content: center;
+
+        height: 350px;
+        width: 100%;
+        background-color: #263238;
+    }
+
+}

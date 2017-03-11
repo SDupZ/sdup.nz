@@ -4847,6 +4847,22 @@ body {
   .base-card--top {
     margin-top: 20px; }
 
+.contact-card {
+  color: #000;
+  text-align: justify;
+  display: block;
+  text-decoration: none; }
+  .contact-card .contact-text {
+    text-align: center;
+    padding: 20px;
+    align-self: center; }
+  .contact-card .contact-img {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    width: 100%;
+    background-color: #263238; }
+
 .divider-vertical {
   height: 18px;
   margin: 15px 5px 0 5px;
