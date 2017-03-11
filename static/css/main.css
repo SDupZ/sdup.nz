@@ -5234,8 +5234,7 @@ p {
   display: block;
   text-decoration: none; }
   .work-card .work-text {
-    text-align: center;
-    padding: 10px;
+    padding: 20px;
     align-self: flex-end; }
     .work-card .work-text--full {
       align-self: center; }
@@ -5254,6 +5253,7 @@ p {
     .work-card .work-img:hover {
       background-size: 105%; }
     .work-card .work-img--full {
+      text-align: center;
       justify-content: center; }
 
 .blog__content {

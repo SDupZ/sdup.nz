@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from project.models import Project
+from projects.models import Project
 
 
 def project(request, slug):

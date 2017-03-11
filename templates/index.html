@@ -7,7 +7,6 @@
         * Jumbotron
         * -->
     <div class="jumbotron"
-        {# style="background-image: linear-gradient(to top right, rgba(33, 33, 33, 1), rgba(33, 33, 33, 1.0))"> #}
         style="background-image: linear-gradient(to top right, rgba(33,33,33, 0.6), rgba(0, 0, 0, 0.8)), url({% static 'img/fallback/jumbotron-header.jpg' %});">
         <div class="mega__heading mega__heading--white">Software Engineer</div>
         <div class="heading__small heading__small--white heading__small--lower">me@sdup.nz</div>
@@ -18,7 +17,7 @@
         * Portfolio Items
         * -->
     <div class="container container--thin">
-        <div class="heading__page">Portfolio.</div>
+        <div class="heading__page">Work.</div>
     </div>
 
     <div class="container">
@@ -26,11 +25,11 @@
             {% for project in projects %}
                 {% if forloop.counter|divisibleby:3 %}
                     <div class="grid__item one-whole">
-                        {% include 'includes/_work-tile.html' with size='full' img=project.icon.url  title=project.title blurb=project.blurb date=project.created|date:'N d, Y' slug=project.slug %}
+                        {% include 'includes/_work-tile.html' with size='full' img=project.header_image.url  title=project.title blurb=project.blurb date=project.created|date:'N d, Y' slug=project.slug %}
                     </div>
                 {% else %}
                     <div class="grid__item one-whole tablet--one-half">
-                        {% include 'includes/_work-tile.html' with img=project.icon.url  title=project.title blurb=project.blurb date=project.created|date:'N d, Y' slug=project.slug %}
+                        {% include 'includes/_work-tile.html' with img=project.header_image.url  title=project.title blurb=project.blurb date=project.created|date:'N d, Y' slug=project.slug %}
                     </div>
                 {% endif %}
 
