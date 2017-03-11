@@ -11,21 +11,7 @@
 <div class="navbar {% if color == 'white' %}navbar--white{% endif %}">
     <div class="container">
         <div class="header">
-
-            {% comment %}
-            <a href="" class="navbar-img">
-                <div class="navbar-logo" style="background-image: url(
-                    {% if color == 'white' %}
-                        {% static 'img/temp/logo--dark.png' %}
-                    {%else%}
-                        {% static 'img/temp/logo.png' %}
-                    {% endif %})">
-                </div>
-            </a>
-
             <a href="{% url 'home' %}" class="navbar-slogan hover-link {% if color == 'white' %}hover-link--color{% endif %}">Simon du Preez</a>
-
-              {% endcomment %}
 
             <nav class="nav">
                 <!-- Desktop -->

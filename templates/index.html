@@ -8,9 +8,9 @@
         * -->
     <div class="jumbotron"
         {# style="background-image: linear-gradient(to top right, rgba(33, 33, 33, 1), rgba(33, 33, 33, 1.0))"> #}
-        style="background-image: linear-gradient(to top right, rgba(33,33,33, 0.6), rgba(0, 0, 0, 0.8)), url({% static 'img/fallback/blog-header.jpg' %});">
-        <div class="heading__1 heading__1--white">Simon du Preez</div>
-        <div class="heading__small heading__small--white heading__small--lower">Software Engineer</div>
+        style="background-image: linear-gradient(to top right, rgba(33,33,33, 0.6), rgba(0, 0, 0, 0.8)), url({% static 'img/fallback/jumbotron-header.jpg' %});">
+        <div class="mega__heading mega__heading--white">Software Engineer</div>
+        <div class="heading__small heading__small--white heading__small--lower">me@sdup.nz</div>
     </div>
 
 
@@ -38,6 +38,8 @@
         </div>
     </div>
 
-    {% include 'includes/_contact-tile.html' with size='full' title='Get in touch.' blurb="Contact" %}
+    <div class="container">
+      {% include 'includes/_contact-tile.html' with size='full' title='Get in touch.' blurb="Contact" %}
+    </div>
 
 {% endblock main-content %}

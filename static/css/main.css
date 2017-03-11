@@ -2,7 +2,7 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -26px;
+  margin-left: -10px;
   height: 100%; }
   .grid--top {
     align-items: flex-start; }
@@ -24,7 +24,7 @@
     flex: 1 1 100%;
     max-width: 100%;
     box-sizing: border-box;
-    padding-left: 26px; }
+    padding-left: 10px; }
     .grid__item--top {
       align-self: flex-start; }
     .grid__item--bottom {
@@ -41,48 +41,48 @@
  * Create grids with wider gutters. Extends `.grid`.
  */
 .grid--tapered {
-  margin-left: -4.33333px; }
+  margin-left: -1.66667px; }
   .grid--tapered > .grid__item {
-    padding-left: 4.33333px; }
+    padding-left: 1.66667px; }
 
 /**
  * Create grids with narrower gutters. Extends `.grid`.
  */
 .grid--narrow {
-  margin-left: -13px; }
+  margin-left: -5px; }
   .grid--narrow > .grid__item {
-    padding-left: 13px; }
+    padding-left: 5px; }
 
 /**
  * Create grids with wider gutters. Extends `.grid`.
  */
 .grid--wide {
-  margin-left: -52px; }
+  margin-left: -20px; }
   .grid--wide > .grid__item {
-    padding-left: 52px; }
+    padding-left: 20px; }
 
 /**
  * Add the possibility to add margin bottom
  */
 .grid--marginbottom.grid {
-  margin-bottom: -26px; }
+  margin-bottom: -10px; }
   .grid--marginbottom.grid > .grid__item {
-    margin-bottom: 26px; }
+    margin-bottom: 10px; }
 
 .grid--marginbottom.grid--narrow {
-  margin-bottom: -13px; }
+  margin-bottom: -5px; }
   .grid--marginbottom.grid--narrow > .grid__item {
-    margin-bottom: 13px; }
+    margin-bottom: 5px; }
 
 .grid--marginbottom.grid--wide {
-  margin-bottom: -52px; }
+  margin-bottom: -20px; }
   .grid--marginbottom.grid--wide > .grid__item {
-    margin-bottom: 52px; }
+    margin-bottom: 20px; }
 
 .grid--marginbottom.grid--tapered {
-  margin-bottom: -4.33333px; }
+  margin-bottom: -1.66667px; }
   .grid--marginbottom.grid--tapered > .grid__item {
-    margin-bottom: 4.33333px; }
+    margin-bottom: 1.66667px; }
 
 /*------------------------------------*    $WIDTHS
 \*------------------------------------*/
@@ -4795,8 +4795,8 @@ body {
   padding-right: 10px; }
   @media only screen and (min-width: 480px) {
     .container {
-      padding-left: 26px;
-      padding-right: 26px; } }
+      padding-left: 10px;
+      padding-right: 10px; } }
 
 .container--thin {
   max-width: 594px; }
@@ -4843,7 +4843,7 @@ body {
   background: white;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
   .base-card--top {
     margin-top: 20px; }
 
@@ -4903,8 +4903,14 @@ body {
   text-decoration: none;
   color: #72808E; }
 
+.mega__heading {
+  display: block;
+  font-size: 3em;
+  color: #000; }
+  .mega__heading--white {
+    color: white; }
+
 .heading__page {
-  text-align: center;
   font-size: 2em;
   font-weight: 400;
   line-height: 36px;
@@ -4956,7 +4962,7 @@ body {
   display: flex;
   align-items: center;
   height: 100%;
-  justify-content: flex-end; }
+  justify-content: space-around; }
 
 .menu-icon {
   z-index: 15;
@@ -5045,7 +5051,7 @@ body {
   position: relative;
   margin-bottom: 0;
   position: relative;
-  height: 700px;
+  height: 90vh;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -5229,7 +5235,7 @@ p {
   text-decoration: none; }
   .work-card .work-text {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     align-self: flex-end; }
     .work-card .work-text--full {
       align-self: center; }

@@ -1,5 +1,13 @@
+.mega__heading {
+    display: block;
+    font-size: 3em;
+    color: $black;
+    &--white {
+        color: white;
+    }
+}
+
 .heading__page {
-    text-align: center;
     font-size: 2em;
     font-weight: 400;
     line-height: 36px;
