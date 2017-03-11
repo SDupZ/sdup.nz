@@ -7,18 +7,21 @@
     .work-text {
         text-align: center;
         padding: 20px;
-        align-self: center;
+        align-self: flex-end;
+        &--full {
+          align-self: center;
+        }
     }
 
     .work-img {
-        height: 300px;
+        display: flex;
+
+        height: 350px;
         width: 100%;
+
         background-size:100%;
         background-position:50% 50%;
         background-repeat: no-repeat;
-
-        display: flex;
-        justify-content: center;
 
         transition: all 0.2s ease-in;
         -moz-transition: all 0.2s ease-in;
@@ -28,6 +31,9 @@
 
         &:hover {
             background-size: 105%;
+        }
+        &--full {
+            justify-content: center;
         }
     }
 
