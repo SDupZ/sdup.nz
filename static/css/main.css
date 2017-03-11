@@ -5014,7 +5014,9 @@ body {
 .nav__list {
   align-self: center; }
   .nav__list .nav__item {
-    display: inline; }
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px; }
 
 .hover-link {
   position: relative;
