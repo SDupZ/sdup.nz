@@ -1,8 +1,10 @@
 <a href="{% url 'project' slug %}" class="base-card work-card ">
-    <div class="work-img {% if size == 'full' %}work-img--full{% endif %}" style="background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)), url({{ img }})">
+    <div class="work-img {% if size == 'full' %}work-img--full{% endif %}"
+    style="opacity: 0.7; background-image: linear-gradient(rgba({{color.0}}, {{color.1}}, {{color.2}}, {{color.3}}), rgba({{color.0}}, {{color.1}}, {{color.2}}, {{color.3}})), url({{ img }})">
+
         <div class="work-text {% if size == 'full' %}work-text--full{% endif %}">
-            <div class="heading__1 heading__1--white">{{title}}</div>
-            <div class="heading__small heading__small--white heading__small--lower">{{blurb}}</div>
+            <div class="heading__1 heading__1--white">{{ title }} </div>
+            <div class="heading__small heading__small--white heading__small--lower">{{ blurb }}</div>
         </div>
     </div>
 </a>
