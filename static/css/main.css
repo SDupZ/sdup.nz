@@ -2610,34 +2610,11 @@ body {
   .heading__small--lower {
     text-transform: none; }
 
-.heading__fancy {
-  line-height: 0.5;
-  text-align: center; }
-
-.heading__fancy span {
-  display: inline-block;
-  position: relative; }
-  .heading__fancy span:before {
-    right: 100%;
-    margin-right: 15px; }
-  .heading__fancy span::after {
-    left: 100%;
-    margin-left: 15px; }
-
-.heading__fancy span:before,
-.heading__fancy span:after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  border-bottom: 1px solid #e0e0e0;
-  top: 0;
-  width: 30px; }
-
 .header {
   display: flex;
   align-items: center;
   height: 100%;
-  justify-content: space-around; }
+  justify-content: flex-end; }
 
 .menu-icon {
   z-index: 15;
@@ -2709,8 +2686,8 @@ body {
   -webkit-transition: all 0.15s ease-in-out 0s;
   transition: all 0.15s ease-in-out 0s; }
 
-.hover-link--red:before {
-  background-color: #c44736; }
+.hover-link--color:before {
+  background-color: #0091EA; }
 
 .hover-link:hover:before {
   visibility: visible;
@@ -2901,6 +2878,31 @@ p {
   line-height: 20px;
   font-size: 12px;
   font-weight: 400; }
+
+.work-card {
+  color: #000;
+  text-align: justify;
+  display: block;
+  text-decoration: none; }
+  .work-card .work-text {
+    text-align: center;
+    padding: 20px;
+    align-self: center; }
+  .work-card .work-img {
+    height: 300px;
+    width: 100%;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in; }
+    .work-card .work-img:hover {
+      background-size: 105%; }
 
 .blog__content {
   padding-left: 26px;

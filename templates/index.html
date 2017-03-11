@@ -3,13 +3,20 @@
 
 {% block main-content %}
 
-    {# Jumbotron #}
+    <!--*
+        * Jumbotron
+        * -->
     <div class="jumbotron"
-        style="background-image: linear-gradient(to top right, rgba(51,122,183, 0.5), rgba(0, 0, 0, 0.7)), url({% static 'img/fallback/blog-header.jpg' %});">
-        <div class="heading__1 heading__1--white">Software Engineer</div>
-        <div class="heading__small heading__small--white heading__small--lower">Developer of cool things</div>
+        style="background-image: linear-gradient(to top right, rgba(33, 33, 33, 1), rgba(33, 33, 33, 1.0))">
+        <!-- style="background-image: linear-gradient(to top right, rgba(51,122,183, 0.5), rgba(0, 0, 0, 0.7)), url({% static 'img/fallback/blog-header.jpg' %});"> -->
+        <div class="heading__1 heading__1--white">Simon du Preez</div>
+        <div class="heading__small heading__small--white heading__small--lower">Software Engineer</div>
     </div>
 
+
+    <!--*
+        * Jumbotron
+        * -->
     <div class="container container--thin">
         <div class="heading__page">Work.</div>
     </div>
@@ -17,9 +24,16 @@
     <div class="container">
         <div class="grid grid--center">
             {% for project in projects %}
-                <div class="grid__item one-whole tablet--one-half">
-                    {% include 'includes/_portfolio-tile.html' with img=project.icon.url  title=project.title blurb=project.blurb date=project.created|date:'N d, Y' slug=project.slug %}
-                </div>
+                {% if forloop.counter|divisibleby:3 %}
+                    <div class="grid__item one-whole">
+                        {% include 'includes/_work-tile.html' with img=project.icon.url  title=project.title blurb=project.blurb date=project.created|date:'N d, Y' slug=project.slug %}
+                    </div>
+                {% else %}
+                    <div class="grid__item one-whole tablet--one-half">
+                        {% include 'includes/_work-tile.html' with img=project.icon.url  title=project.title blurb=project.blurb date=project.created|date:'N d, Y' slug=project.slug %}
+                    </div>
+                {% endif %}
+
             {% endfor %}
         </div>
     </div>
