@@ -4923,7 +4923,7 @@ body {
   font-weight: 400;
   line-height: 36px;
   color: #000;
-  margin: 55px auto; }
+  margin: 30px auto; }
   .heading__page--white {
     color: #fff; }
 
@@ -4970,6 +4970,9 @@ body {
     color: white; }
   .heading__small--lower {
     text-transform: none; }
+
+.white {
+  color: white; }
 
 .header {
   display: flex;

@@ -15,7 +15,7 @@
     font-weight: 400;
     line-height: 36px;
     color: $black;
-    margin: 55px auto;
+    margin: 30px auto;
 
     &--white {
         color: $white;
@@ -77,4 +77,8 @@
     &--lower {
         text-transform: none;
     }
+}
+
+.white {
+    color: white;
 }
