@@ -4783,9 +4783,11 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Oxygen', sans-serif; }
-  body p {
-    font: normal 15px/1.9em 'Merriweather', Georgia, serif; }
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.9em;
+  font: normal 15px/1.9em 'Merriweather', Georgia, serif;
+  color: #292929; }
 
 .container {
   max-width: 1140px;
@@ -4904,6 +4906,7 @@ body {
   color: #72808E; }
 
 .mega__heading {
+  font-family: 'Oxygen', sans-serif;
   display: block;
   font-size: 3em;
   color: #000; }
@@ -4911,6 +4914,7 @@ body {
     color: white; }
 
 .heading__page {
+  font-family: 'Oxygen', sans-serif;
   font-size: 2em;
   padding-left: 20px;
   font-weight: 400;
@@ -4921,6 +4925,7 @@ body {
     color: #fff; }
 
 .heading__1 {
+  font-family: 'Oxygen', sans-serif;
   display: block;
   font-size: 2em;
   font-weight: 500;
@@ -4929,6 +4934,7 @@ body {
     color: white; }
 
 .heading__2 {
+  font-family: 'Oxygen', sans-serif;
   display: block;
   font-size: 1.8em;
   font-weight: 500;
@@ -4937,6 +4943,7 @@ body {
     color: white; }
 
 .heading__3 {
+  font-family: 'Oxygen', sans-serif;
   display: block;
   font-size: 1.5em;
   font-weight: 500;
@@ -4945,12 +4952,14 @@ body {
     color: white; }
 
 .heading__content {
+  font-family: 'Oxygen', sans-serif;
   display: block;
   font-size: 14px;
   font-weight: 500;
   color: #72808E; }
 
 .heading__small {
+  font-family: 'Oxygen', sans-serif;
   color: #4f5d6b;
   font-size: 0.9em;
   font-weight: 500; }
@@ -5225,9 +5234,6 @@ div.menu li.animate {
   margin-left: -50%;
   transition-delay: 0.2s; }
 
-figcaption {
-  font-style: italic; }
-
 .image__float--right {
   margin: 0 auto; }
   .image__float--right img {
@@ -5235,7 +5241,8 @@ figcaption {
   @media only screen and (min-width: 480px) {
     .image__float--right {
       float: right;
-      padding: 20px; } }
+      padding: 20px;
+      max-width: 50%; } }
 
 .image__float--left {
   margin: 0 auto; }
@@ -5244,13 +5251,34 @@ figcaption {
   @media only screen and (min-width: 480px) {
     .image__float--left {
       float: left;
-      padding: 20px; } }
+      padding: 20px;
+      max-width: 50%; } }
 
-p {
-  margin: 12px 0 12px 0;
-  line-height: 20px;
-  font-size: 12px;
-  font-weight: 400; }
+.image__triple {
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+  margin: 0; }
+  @media only screen and (min-width: 768px) {
+    .image__triple {
+      max-width: 32%; } }
+  .image__triple img {
+    width: 100%; }
+
+.image__double {
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+  margin: 0; }
+  @media only screen and (min-width: 768px) {
+    .image__double {
+      max-width: 50%; } }
+  .image__double img {
+    width: 100%; }
+
+figcaption {
+  font-style: italic;
+  font-size: 14px; }
 
 .work-card {
   color: #000;
@@ -5286,8 +5314,6 @@ p {
   padding-bottom: 26px;
   margin-top: 26px;
   overflow: auto; }
-  .blog__content p {
-    font: normal 15px/1.9em 'Merriweather', Georgia, serif; }
 
 .page {
   overflow: auto;

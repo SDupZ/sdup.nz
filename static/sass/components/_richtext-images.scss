@@ -1,7 +1,3 @@
-figcaption {
-    font-style: italic;
-}
-
 .image__float--right {
     margin: 0 auto;
 
@@ -12,6 +8,7 @@ figcaption {
     @include respond-to(mobile) {
         float: right;
         padding: 20px;
+        max-width: 50%;
     }
 }
 
@@ -25,5 +22,36 @@ figcaption {
     @include respond-to(mobile) {
         float: left;
         padding: 20px;
+        max-width: 50%;
+    }
+}
+
+.image__triple {
+    width: 100%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+    @include respond-to(tablet) {
+        max-width: 32%;
+    }
+
+    img {
+      width: 100%;
+    }
+}
+
+.image__double {
+    width: 100%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+    @include respond-to(tablet) {
+        max-width: 50%;
+    }
+
+    img {
+      width: 100%;
     }
 }

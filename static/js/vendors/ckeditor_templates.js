@@ -21,6 +21,34 @@ var tmp = [
                         "<figcaption>Image caption</figcaption>" +
                     "</figure>"
             },
+            {
+                title: 'Triple Image',
+                html:
+                    "<figure class='image__triple'>" +
+                        "<img src='/static/img/fallback/placeholder.png' />" +
+                        "<figcaption>Image caption</figcaption>" +
+                    "</figure>" +
+                    "<figure class='image__triple'>" +
+                        "<img src='/static/img/fallback/placeholder.png' />" +
+                        "<figcaption>Image caption</figcaption>" +
+                    "</figure>" +
+                    "<figure class='image__triple'>" +
+                        "<img src='/static/img/fallback/placeholder.png' />" +
+                        "<figcaption>Image caption</figcaption>" +
+                    "</figure>"
+            },
+            {
+                title: 'Double Image',
+                html:
+                    "<figure class='image__double'>" +
+                        "<img src='/static/img/fallback/placeholder.png' />" +
+                        "<figcaption>Image caption</figcaption>" +
+                    "</figure>" +
+                    "<figure class='image__double'>" +
+                        "<img src='/static/img/fallback/placeholder.png' />" +
+                        "<figcaption>Image caption</figcaption>" +
+                    "</figure>"
+            },
         ];
 
 for(var ind=0; ind<galleries.length; ind++){

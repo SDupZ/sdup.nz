@@ -154,7 +154,7 @@ CKEDITOR_CONFIGS = {
         'templates_replaceContent': False,
         'toolbar': 'full',
         'width': 'auto',
-        'filebrowserImageBrowseUrl': '/admin/filer/folder/unfiled_images/?_pick=file&_to_field=file_ptr&_popup=1',
+        'filebrowserImageBrowseUrl': '/admin/filer/folder/unfiled_images/?_pick=file&_to_field=file_ptr',
         'entities': False,
         'fillEmptyBlocks': False,
         'tabSpaces': 0,
