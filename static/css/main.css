@@ -4880,6 +4880,9 @@ body {
   height: 0;
   margin: 0; }
 
+.colour-strip {
+  height: 2px; }
+
 .footer {
   text-align: center;
   background-color: #fff;
@@ -5311,7 +5314,9 @@ figcaption {
 .blog__content {
   padding-left: 26px;
   padding-right: 26px;
-  padding-bottom: 26px;
+  padding-bottom: 26px; }
+
+.blog__card {
   margin-top: 26px;
   overflow: auto; }
 

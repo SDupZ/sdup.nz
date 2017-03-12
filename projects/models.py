@@ -12,6 +12,8 @@ class Project(models.Model):
     title = models.CharField(db_index=True, max_length=150)
     blurb = models.TextField(blank=True, null=True, max_length=150)
 
+    time_line = models.CharField(blank=True, max_length=150)
+
     icon = FilerImageField(blank=True, null=True, related_name="project_icon_image")
     color = ColorField(default='#FF0000')
     color_alpha = models.DecimalField(decimal_places=1, max_digits=2, default=1)

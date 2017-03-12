@@ -8,13 +8,16 @@
 
 {% block main-content %}
     <div class="page page--blog">
-        <div class="container container">
-            <div class="base-card blog__content">
-                <div class="heading__page">
-                    {{ project.title }}
+        <div class="container container--thin">
+            <div class="base-card blog__card">
+                <div class=colour-strip style="background: {{ project.color }}"></div>
+                <div class="blog__content">
+                    <div class="heading__page">
+                        {{ project.title }}
+                    </div>
+                    <figcaption>{{ project.time_line }}</figcaption>
+                    <p>{{ project.content|safe }}</p>
                 </div>
-                <figcaption>{{ project.created|date:'N d, Y'}}</figcaption>
-                <p>{{ project.content|safe }}</p>
             </div>
         </div>
     </div>
