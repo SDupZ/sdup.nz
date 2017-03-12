@@ -4912,6 +4912,7 @@ body {
 
 .heading__page {
   font-size: 2em;
+  padding-left: 20px;
   font-weight: 400;
   line-height: 36px;
   color: #000;
@@ -5223,6 +5224,27 @@ div.menu li.animate {
 .menu-splitR li.animate:nth-of-type(5) {
   margin-left: -50%;
   transition-delay: 0.2s; }
+
+figcaption {
+  font-style: italic; }
+
+.image__float--right {
+  margin: 0 auto; }
+  .image__float--right img {
+    width: 100%; }
+  @media only screen and (min-width: 480px) {
+    .image__float--right {
+      float: right;
+      padding: 20px; } }
+
+.image__float--left {
+  margin: 0 auto; }
+  .image__float--left img {
+    width: 100%; }
+  @media only screen and (min-width: 480px) {
+    .image__float--left {
+      float: left;
+      padding: 20px; } }
 
 p {
   margin: 12px 0 12px 0;

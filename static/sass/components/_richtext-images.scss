@@ -1,0 +1,29 @@
+figcaption {
+    font-style: italic;
+}
+
+.image__float--right {
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+
+    @include respond-to(mobile) {
+        float: right;
+        padding: 20px;
+    }
+}
+
+.image__float--left {
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+
+    @include respond-to(mobile) {
+        float: left;
+        padding: 20px;
+    }
+}

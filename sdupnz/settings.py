@@ -137,3 +137,33 @@ THUMBNAIL_HIGH_RESOLUTION = True
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+CKEDITOR_UPLOAD_PATH = join(MEDIA_ROOT, 'media')
+
+CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
+CKEDITOR_CONFIGS = {
+    'default': {
+        'templates_files': ['{0}js/vendors/ckeditor_templates.js'.format(STATIC_URL), ],
+        'templates_replaceContent': False,
+        'autoGrow_onStartup': True,
+        'scayt_autoStartup': True,
+        'autoGrow_minHeight': 300,
+        'autoGrow_maxHeight': 1200,
+        'removePlugins': 'iframe, stylesheetparser',
+        'templates': 'default',
+        'templates_replaceContent': False,
+        'toolbar': 'full',
+        'width': 'auto',
+        'filebrowserImageBrowseUrl': '/admin/filer/folder/unfiled_images/?_pick=file&_to_field=file_ptr&_popup=1',
+        'entities': False,
+        'fillEmptyBlocks': False,
+        'tabSpaces': 0,
+        'forcePasteAsPlainText': True,
+        'basicEntities': False,
+        'entities_greek': False,
+        'entities_latin': False,
+        'entities_additional': False,
+        'format_tags': 'p;h1;h2;h3;h4;pre',
+        'extraAllowedContent': 'figcaption figure(*){*}[*]',
+    },
+}
