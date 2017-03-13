@@ -37,10 +37,6 @@ RUN sed -i '1s/^/local all docker trust\n/' /etc/postgresql/9.4/main/pg_hba.conf
 ##################
 
 
-ADD configurations/uwsgiconfig.ini /etc/uwsgi/vassals/sdupnz.ini
-ADD configurations/nginx.conf /etc/nginx/sites-available/sdupnz
-RUN ln -s /etc/nginx/sites-available/sdupnz /etc/nginx/sites-enabled/sdupnz
-RUN chmod +x /etc/uwsgi/vassals/sdupnz.ini
 
 USER root
 
