@@ -1,8 +1,9 @@
-version: '2'
+version: '3'
 
 services:
     # PostgreSQL database
     db:
+        restart: always
         image: postgres:9.6
         hostname: db
         environment:
@@ -12,8 +13,10 @@ services:
         ports:
             - "5432:5432"
 
+
     # Django web server
     web:
+        restart: always
         build:
             context: .
             dockerfile: Dockerfile
@@ -31,6 +34,7 @@ services:
 
     # NGINX
     nginx:
+        restart: always
         image: nginx:latest
         container_name: ng01
         ports:
