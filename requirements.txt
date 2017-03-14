@@ -1,6 +1,6 @@
 Django
 psycopg2
-uwsgi
+gunicorn
 
 django-ckeditor
 Pillow

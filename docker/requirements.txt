@@ -1,8 +1,0 @@
-Django
-psycopg2
-uwsgi
-
-django-ckeditor
-Pillow
-django-filer
-django-colorfield
