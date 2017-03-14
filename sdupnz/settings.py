@@ -18,8 +18,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'sdup.dev',
-    'staging.sdup.nz'
-    'sdup.nz'
+    'staging.sdup.nz',
+    'sdup.nz',
 ]
 
 
