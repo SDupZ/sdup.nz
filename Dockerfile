@@ -9,14 +9,17 @@ RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main" > /etc
 
 RUN apt-get update
 
+RUN apt-get install -y nginx
+
 RUN apt-get install -y build-essential python-software-properties software-properties-common postgresql-9.4 postgresql-client-9.4 postgresql-contrib-9.4 libpq-dev
 
 RUN apt-get install -y curl git vim nano
 
 RUN apt-get install -y python-dev python-setuptools
 
-RUN easy_install pip
 
+
+RUN easy_install pip
 
 
 ####################
@@ -36,6 +39,8 @@ RUN sed -i '1s/^/local all docker trust\n/' /etc/postgresql/9.4/main/pg_hba.conf
 # End PostgreSQL #
 ##################
 
+ADD configurations/uwsgi.conf /etc/init/uwsgi.conf
+RUN chmod 755 /etc/init/uwsgi.conf
 
 ADD configurations/uwsgiconfig.ini /etc/uwsgi/vassals/sdupnz.ini
 ADD configurations/nginx.conf /etc/nginx/sites-available/sdupnz
