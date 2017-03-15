@@ -1,6 +1,8 @@
 from django.conf.urls import url
 from django.contrib import admin
 from django.views.static import serve
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 
 from django.conf import settings
 from default.views import home
@@ -20,6 +22,11 @@ urlpatterns = [
 
     url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
 ]
+
+# Only append if urlpatterns are empty
+if settings.DEBUG:
+    urlpatterns += staticfiles_urlpatterns()
+
 
 admin.site.unregister(Folder)
 admin.site.unregister(ThumbnailOption)

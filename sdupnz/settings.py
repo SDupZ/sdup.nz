@@ -17,7 +17,6 @@ SECRET_KEY = '6t_!#2z6gibm-!aj$m4f_-hkw+hhw09d&+)as)nmhtzg%d6b8z'
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'sdup.dev',
     'staging.sdup.nz',
     'sdup.nz',
 ]
@@ -170,3 +169,8 @@ CKEDITOR_CONFIGS = {
         'extraAllowedContent': 'figcaption figure(*){*}[*]',
     },
 }
+
+try:
+    from config.local_settings import *
+except ImportError:
+    pass
