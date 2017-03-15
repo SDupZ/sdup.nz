@@ -21,7 +21,7 @@ services:
             context: .
             dockerfile: Dockerfile
         hostname: web
-        command: ./run_web.sh
+        command: ./run_web--dev.sh
         volumes:
             - .:/srv/www/sdupnz/sdupnz  # mount current directory inside container
         ports:

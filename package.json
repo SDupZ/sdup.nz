@@ -1,0 +1,10 @@
+{
+  "name": "Sdup.nz",
+  "version": "1.0.0",
+  "description": "Sdup.nz",
+  "author": "Simon du Preez",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.3.0"
+  }
+}
