@@ -1,84 +1,45 @@
+%heading-base {
+    font-family: 'Oxygen', sans-serif;
+    display: block;
+    color: $black;
+}
+
 .mega__heading {
-    font-family: 'Oxygen', sans-serif;
-    display: block;
+    @extend %heading-base;
     font-size: 3em;
-    color: $black;
-    &--white {
-        color: white;
-    }
 }
 
-.heading__page {
-    font-family: 'Oxygen', sans-serif;
+.h1 {
+    @extend %heading-base;
     font-size: 2em;
-    padding-left: 20px;
-    font-weight: 400;
     line-height: 36px;
-    color: $black;
     margin: 30px auto;
-
-    &--white {
-        color: $white;
-    }
 }
 
-.heading__1 {
-    font-family: 'Oxygen', sans-serif;
-    display: block;
+.h2 {
+    @extend %heading-base;
     font-size: 2em;
-    font-weight: 500;
-    color: $black;
-    &--white {
-        color: white;
-    }
 }
 
-.heading__2 {
-    font-family: 'Oxygen', sans-serif;
-    display: block;
+.h3 {
+    @extend %heading-base;
     font-size: 1.8em;
-    font-weight: 500;
-    color: $black;
-    &--white {
-        color: white;
-    }
 }
 
-.heading__3 {
-    font-family: 'Oxygen', sans-serif;
-    display: block;
+.h4 {
+    @extend %heading-base;
     font-size: 1.5em;
-    font-weight: 500;
-    color: $black;
-    &--white {
-        color: white;
-    }
 }
 
-.heading__content {
-    font-family: 'Oxygen', sans-serif;
-    display: block;
+.h5 {
+    @extend %heading-base;
     font-size: 14px;
-    font-weight: 500;
     color: $grey;
 }
 
-
-.heading__small {
-    font-family: 'Oxygen', sans-serif;
+small {
+    @extend %heading-base;
     color: $grey--darker;
     font-size: 0.9em;
     font-weight: 500;
-
-    &--white {
-      color: white;
-    }
-
-    &--lower {
-        text-transform: none;
-    }
-}
-
-.white {
-    color: white;
 }

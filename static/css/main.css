@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Neuton|Roboto);
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -4782,12 +4783,45 @@ html {
   overflow-y: scroll; }
 
 body {
-  margin: 0;
-  font-weight: 200;
-  font-size: 16px;
-  line-height: 1.9em;
-  font: normal 15px/1.9em 'Merriweather', Georgia, serif;
-  color: #292929; }
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oxygen", serif; }
+
+p, small {
+  font-family: "Roboto", sans-serif; }
+
+h1 {
+  font-size: 480pxpx;
+  font-size: 48pxrem; }
+
+h2 {
+  font-size: 360pxpx;
+  font-size: 36pxrem; }
+
+h3 {
+  font-size: 320pxpx;
+  font-size: 32pxrem; }
+
+h4 {
+  font-size: 280pxpx;
+  font-size: 28pxrem; }
+
+h5 {
+  font-size: 240pxpx;
+  font-size: 24pxrem; }
+
+h6 {
+  font-size: 200pxpx;
+  font-size: 20pxrem; }
+
+p {
+  font-size: 160pxpx;
+  font-size: 16pxrem; }
+
+small {
+  font-size: 120pxpx;
+  font-size: 12pxrem; }
 
 .container {
   max-width: 1140px;
@@ -4908,71 +4942,36 @@ body {
   text-decoration: none;
   color: #72808E; }
 
+.mega__heading, .h1, .h2, .h3, .h4, .h5, small {
+  font-family: 'Oxygen', sans-serif;
+  display: block;
+  color: #000; }
+
 .mega__heading {
-  font-family: 'Oxygen', sans-serif;
-  display: block;
-  font-size: 3em;
-  color: #000; }
-  .mega__heading--white {
-    color: white; }
+  font-size: 3em; }
 
-.heading__page {
-  font-family: 'Oxygen', sans-serif;
+.h1 {
   font-size: 2em;
-  padding-left: 20px;
-  font-weight: 400;
   line-height: 36px;
-  color: #000;
   margin: 30px auto; }
-  .heading__page--white {
-    color: #fff; }
 
-.heading__1 {
-  font-family: 'Oxygen', sans-serif;
-  display: block;
-  font-size: 2em;
-  font-weight: 500;
-  color: #000; }
-  .heading__1--white {
-    color: white; }
+.h2 {
+  font-size: 2em; }
 
-.heading__2 {
-  font-family: 'Oxygen', sans-serif;
-  display: block;
-  font-size: 1.8em;
-  font-weight: 500;
-  color: #000; }
-  .heading__2--white {
-    color: white; }
+.h3 {
+  font-size: 1.8em; }
 
-.heading__3 {
-  font-family: 'Oxygen', sans-serif;
-  display: block;
-  font-size: 1.5em;
-  font-weight: 500;
-  color: #000; }
-  .heading__3--white {
-    color: white; }
+.h4 {
+  font-size: 1.5em; }
 
-.heading__content {
-  font-family: 'Oxygen', sans-serif;
-  display: block;
+.h5 {
   font-size: 14px;
-  font-weight: 500;
   color: #72808E; }
 
-.heading__small {
-  font-family: 'Oxygen', sans-serif;
+small {
   color: #4f5d6b;
   font-size: 0.9em;
   font-weight: 500; }
-  .heading__small--white {
-    color: white; }
-  .heading__small--lower {
-    text-transform: none; }
-
-.white {
-  color: white; }
 
 .header {
   display: flex;
@@ -5313,6 +5312,12 @@ figcaption {
     .work-card .work-img--full {
       text-align: center;
       justify-content: center; }
+
+.white {
+  color: white; }
+
+.lowercase {
+  text-transform: lowercase; }
 
 .blog__content {
   padding-left: 26px;
