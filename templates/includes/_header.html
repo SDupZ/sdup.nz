@@ -2,11 +2,13 @@
 <!-- Navigation Menu and Header-->
 
 {# Sites outside of nav div as it needs to be on correct z index #}
+{% comment %}
 <button class="menu-icon hamburger hamburger--spin" type="button">
     <span class="hamburger-box">
         <span class="hamburger-inner {% if color == 'white' %}hamburger-inner--white-nav{% endif %}"></span>
     </span>
 </button>
+{% endcomment %}
 
 <div class="navbar {% if color == 'white' %}navbar--white{% endif %}">
     <div class="container">
