@@ -14,3 +14,11 @@ https://github.com/sass/node-sass/blob/master/README.md
 `nvm install 6.5.0`
 `npm install node-sass`
 `node compile.js`
+
+
+ dropdb -U postgres postgres
+ createdb -O postgres -U postgres postgres -T template0 -E 'UTF8'
+ pg_restore -U postgres -s -d postgres 'latest_database_backup.sql'
+ nano pg_restore -U postgres -a --disable-triggers -d postgres 'latest_database_backup.sql'
+
+ docker-compose -f production.yml up -d

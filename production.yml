@@ -24,7 +24,7 @@ services:
         command: ./run_web.sh
         volumes:
             - .:/srv/www/sdupnz/sdupnz  # mount current directory inside container
-            - /static:/srv/www/public-www/static
+            - /var/www/sdup.nz2/static:/srv/www/public-www/static
         ports:
             - "8010:8010"
         # set up links so that web knows about db, rabbit and redis
