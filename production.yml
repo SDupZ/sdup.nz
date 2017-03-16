@@ -34,14 +34,14 @@ services:
             - db
 
     # NGINX
-    nginx:
-        restart: always
-        image: nginx:latest
-        container_name: ng01
-        ports:
-            - "8000:8000"
-        volumes:
-            - .:/srv/www/sdupnz/sdupnz
-            - ./config/nginx:/etc/nginx/conf.d
-        depends_on:
-            - web
+    # nginx:
+    #     restart: always
+    #     image: nginx:latest
+    #     container_name: ng01
+    #     ports:
+    #         - "8000:8000"
+    #     volumes:
+    #         - .:/srv/www/sdupnz/sdupnz
+    #         - ./config/nginx:/etc/nginx/conf.d
+    #     depends_on:
+    #         - web
