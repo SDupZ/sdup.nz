@@ -5286,10 +5286,15 @@ div.menu li.animate {
   padding-left: 0; }
 
 .social--header li {
-  margin-right: 15px; }
+  margin: 0; }
 
 .social--header a {
+  padding: 15px;
   color: white; }
+  .social--header a i {
+    transition: all cubic-bezier(0.25, 0.75, 0.5, 1.25) 0.2s; }
+  .social--header a:hover i {
+    transform: scale(1.5); }
 
 figcaption {
   font-style: italic;
