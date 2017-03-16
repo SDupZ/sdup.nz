@@ -1,0 +1,28 @@
+.social {
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $grey;
+    }
+}
+
+.social--header {
+    ul {
+      padding-left: 0;
+    }
+    li {
+        margin-right: 15px;
+    }
+
+    a {
+        color: white;
+    }
+}

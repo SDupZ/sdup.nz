@@ -10,6 +10,13 @@
         style="background-image: linear-gradient(to top right, rgba(33,33,33, 0.6), rgba(0, 0, 0, 0.8)), url({% static 'img/fallback/jumbotron-header.jpg' %});">
         <h1 class="mega__heading white">Software Engineer</h1>
         <small class="white">me@sdup.nz</small>
+        <div class="social social--header">
+            <ul>
+              <li><a href=https://www.linkedin.com/in/simondupreez/"" target="blank"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://github.com/SDupZ" target="blank"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://www.facebook.com/sdup.nz" target="blank"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+        </div>
     </div>
 
 
@@ -38,7 +45,7 @@
     </div>
 
     <div class="container">
-      {% include 'includes/_contact-tile.html' with size='full' title='Get in touch.' blurb="Contact" %}
+      {% include 'includes/_contact-tile.html' with size='full' title='Get in touch.' %}
     </div>
 
 {% endblock main-content %}

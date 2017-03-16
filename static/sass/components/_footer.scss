@@ -14,20 +14,3 @@
     display: flex;
     justify-content: space-between;
 }
-
-
-.footer__social {
-    ul {
-        list-style: none;
-    }
-
-    li {
-        display: inline-block;
-        margin-left: 15px;
-    }
-
-    a {
-        text-decoration: none;
-        color: $grey;
-    }
-}

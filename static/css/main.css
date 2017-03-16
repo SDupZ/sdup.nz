@@ -4785,7 +4785,7 @@ html {
 body {
   margin: 0; }
 
-h1, h2, h3, h4, h5, h6 {
+a, h1, h2, h3, h4, h5, h6 {
   font-family: "Oxygen", serif; }
 
 p, small {
@@ -4835,7 +4835,7 @@ small {
       padding-right: 10px; } }
 
 .container--thin {
-  max-width: 594px; }
+  max-width: 690px; }
 
 .wrapper--center {
   text-align: center; }
@@ -4931,24 +4931,14 @@ small {
   display: flex;
   justify-content: space-between; }
 
-.footer__social ul {
-  list-style: none; }
-
-.footer__social li {
-  display: inline-block;
-  margin-left: 15px; }
-
-.footer__social a {
-  text-decoration: none;
-  color: #72808E; }
-
 .mega__heading, .h1, .h2, .h3, .h4, .h5, small {
   font-family: 'Oxygen', sans-serif;
   display: block;
   color: #000; }
 
 .mega__heading {
-  font-size: 3em; }
+  font-size: 3em;
+  margin-bottom: 10px; }
 
 .h1 {
   font-size: 2em;
@@ -5280,6 +5270,26 @@ div.menu li.animate {
       max-width: 50%; } }
   .image__double img {
     width: 100%; }
+
+.social ul {
+  list-style: none; }
+
+.social li {
+  display: inline-block;
+  margin-left: 15px; }
+
+.social a {
+  text-decoration: none;
+  color: #72808E; }
+
+.social--header ul {
+  padding-left: 0; }
+
+.social--header li {
+  margin-right: 15px; }
+
+.social--header a {
+  color: white; }
 
 figcaption {
   font-style: italic;
