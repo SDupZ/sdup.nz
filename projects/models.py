@@ -21,6 +21,8 @@ class Project(models.Model):
     header_image = FilerImageField(blank=True, null=True, related_name="project_header_image")
     content = RichTextField(blank=True, null=True)
 
+    order = models.IntegerField()
+
     def get_rgba(self):
 
         r =  int(self.color[1:][:2], 16)
@@ -35,3 +37,4 @@ class Project(models.Model):
 
     class Meta:
         verbose_name = "Project"
+        ordering = ('order',)
