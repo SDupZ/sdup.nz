@@ -6,3 +6,4 @@ django-ckeditor
 Pillow
 django-filer
 django-colorfield
+django-admin-sortable2

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'filer',
     'mptt',
     'colorfield',
+    'adminsortable2',
 
     # Custom
     'default',
