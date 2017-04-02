@@ -21,7 +21,7 @@ class Project(models.Model):
     header_image = FilerImageField(blank=True, null=True, related_name="project_header_image")
     content = RichTextField(blank=True, null=True)
 
-    order = models.IntegerField()
+    order = models.IntegerField(default=0, blank=False, null=False)
 
     def get_rgba(self):
 
