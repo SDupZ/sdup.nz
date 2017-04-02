@@ -3,7 +3,6 @@ version: '2'
 services:
     # PostgreSQL database
     db:
-        restart: always
         image: postgres:9.6
         hostname: db
         environment:
@@ -11,12 +10,11 @@ services:
             - POSTGRES_PASSWORD=postgres
             - POSTGRES_DB=postgres
         ports:
-            - "5432:5432"
+            - "5433:5432"
 
 
     # Django web server
     web:
-        restart: always
         build:
             context: .
             dockerfile: Dockerfile
@@ -25,22 +23,9 @@ services:
         volumes:
             - .:/srv/www/sdupnz/sdupnz  # mount current directory inside container
         ports:
-            - "8010:8010"
+            - "8009:8009"
         # set up links so that web knows about db, rabbit and redis
         links:
             - db
         depends_on:
             - db
-
-    # NGINX
-    nginx:
-        restart: always
-        image: nginx:latest
-        container_name: ng01
-        ports:
-            - "8000:8000"
-        volumes:
-            - .:/srv/www/sdupnz/sdupnz
-            - ./config/nginx:/etc/nginx/conf.d
-        depends_on:
-            - web

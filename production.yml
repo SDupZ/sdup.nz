@@ -11,7 +11,7 @@ services:
             - POSTGRES_PASSWORD=postgres
             - POSTGRES_DB=postgres
         ports:
-            - "5432:5432"
+            - "5433:5432"
 
 
     # Django web server
@@ -24,24 +24,10 @@ services:
         command: ./run_web.sh
         volumes:
             - .:/srv/www/sdupnz/sdupnz  # mount current directory inside container
-            - /var/www/sdup.nz2/static:/srv/www/public-www/static
         ports:
-            - "8010:8010"
+            - "8009:8009"
         # set up links so that web knows about db, rabbit and redis
         links:
             - db
         depends_on:
             - db
-
-    # NGINX
-    # nginx:
-    #     restart: always
-    #     image: nginx:latest
-    #     container_name: ng01
-    #     ports:
-    #         - "8000:8000"
-    #     volumes:
-    #         - .:/srv/www/sdupnz/sdupnz
-    #         - ./config/nginx:/etc/nginx/conf.d
-    #     depends_on:
-    #         - web

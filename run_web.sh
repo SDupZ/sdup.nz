@@ -5,8 +5,13 @@ sleep 10
 
 cd /srv/www/sdupnz/sdupnz
 # prepare init migration
-su -m myuser -c "python manage.py makemigrations"
-# migrate db, so we have the latest db schema
-su -m myuser -c "python manage.py migrate"
-# start development server on public ip interface, on port 8010
-su -m myuser -c "gunicorn sdupnz.wsgi --reload -b 0.0.0.0:8010"
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+# python manage.py collectstatic --noinput
+
+/etc/init.d/nginx start
+
+uwsgi --ini /srv/www/sdupnz/sdupnz/config/nginx/sdupnz_uwsgi.ini
