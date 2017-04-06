@@ -2,7 +2,7 @@
     <div class="work-tile-wrapper {% if size == 'full' %}work-tile-wrapper--full{% endif %}"
     style="background-image: linear-gradient(rgba({{color.0}}, {{color.1}}, {{color.2}}, {{color.3}}), rgba({{color.0}}, {{color.1}}, {{color.2}}, {{color.3}}))">
         <div class="work-img" {% if icon_opacity %}style="opacity: {{ icon_opacity }}"{% endif %}>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Blue_2006_YZFR6.jpg/300px-Blue_2006_YZFR6.jpg' />
+          <img src='{{ img }}' />
         </div>
         <div class="work-text {% if size == 'full' %}work-text--full{% endif %}">
             <h1 class="h1 {% if font_color == 'FW' %} white {% endif %}">{{ title }} </h1>
