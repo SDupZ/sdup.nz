@@ -5306,15 +5306,17 @@ figcaption {
   display: block;
   text-decoration: none; }
   .work-card .work-text {
+    z-index: 2;
     padding: 20px;
     align-self: flex-end; }
     .work-card .work-text--full {
       align-self: center; }
-  .work-card .work-img {
+  .work-card .work-tile-wrapper {
+    position: relative;
     display: flex;
     height: 350px;
     width: 100%;
-    background-size: 100%;
+    background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     transition: all 0.2s ease-in;
@@ -5322,11 +5324,17 @@ figcaption {
     -ms-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in; }
-    .work-card .work-img:hover {
-      background-size: 105%; }
-    .work-card .work-img--full {
+    .work-card .work-tile-wrapper--full {
       text-align: center;
       justify-content: center; }
+  .work-card .work-img {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    .work-card .work-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
 
 .white {
   color: white; }

@@ -5,6 +5,14 @@ from filer.fields.image import FilerImageField
 from colorfield.fields import ColorField
 
 class Project(models.Model):
+    FONT_WHITE = 'FW'
+    FONT_BLACK = 'FB'
+
+    FONT_CHOICES = (
+        (FONT_WHITE, 'White Font'),
+        (FONT_BLACK, 'Black Font'),
+    )
+
     created = models.DateTimeField(db_index=True, auto_now_add=True)
     modified = models.DateTimeField(db_index=True, auto_now=True)
 
@@ -15,7 +23,10 @@ class Project(models.Model):
     time_line = models.CharField(blank=True, max_length=150)
 
     icon = FilerImageField(blank=True, null=True, related_name="project_icon_image")
+
     color = ColorField(default='#FF0000')
+    font_color = models.CharField(max_length=2, choices=FONT_CHOICES, default=FONT_WHITE,)
+
     color_alpha = models.DecimalField(decimal_places=1, max_digits=2, default=1)
 
     header_image = FilerImageField(blank=True, null=True, related_name="project_header_image")
