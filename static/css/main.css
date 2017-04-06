@@ -5311,6 +5311,12 @@ figcaption {
     align-self: flex-end; }
     .work-card .work-text--full {
       align-self: center; }
+    .work-card .work-text h1, .work-card .work-text figcaption, .work-card .work-text small {
+      transition: all 0.2s ease-in;
+      -moz-transition: all 0.2s ease-in;
+      -ms-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      -webkit-transition: all 0.2s ease-in; }
   .work-card .work-tile-wrapper {
     position: relative;
     display: flex;
@@ -5318,23 +5324,32 @@ figcaption {
     width: 100%;
     background-size: cover;
     background-position: 50% 50%;
-    background-repeat: no-repeat;
-    transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2s ease-in; }
+    background-repeat: no-repeat; }
     .work-card .work-tile-wrapper--full {
       text-align: center;
       justify-content: center; }
+    .work-card .work-tile-wrapper:hover .work-img img {
+      transform: scale(1.05); }
+    .work-card .work-tile-wrapper:hover .work-img img {
+      transform: scale(1.05); }
+    .work-card .work-tile-wrapper:hover .work-text h1 {
+      transform: translateY(-5px); }
+    .work-card .work-tile-wrapper:hover .work-text figcaption, .work-card .work-tile-wrapper:hover small {
+      transform: translateY(5px); }
   .work-card .work-img {
     position: absolute;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    overflow: hidden; }
     .work-card .work-img img {
       width: 100%;
       height: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      transition: all 0.2s ease-in;
+      -moz-transition: all 0.2s ease-in;
+      -ms-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      -webkit-transition: all 0.2s ease-in; }
 
 .white {
   color: white; }
