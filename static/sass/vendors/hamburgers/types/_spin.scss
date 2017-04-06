@@ -41,6 +41,18 @@
                       transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
         }
       }
+
+      .hamburger-inner--white-nav {
+        background-color: white;
+
+        &::before,  {
+          background-color: white;
+        }
+
+        &::after {
+          background-color: white;
+        }
+      }
     }
   }
 }

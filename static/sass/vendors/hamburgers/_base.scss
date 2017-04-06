@@ -66,4 +66,12 @@
   &::after {
     bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
   }
+
+  &--white-nav {
+      &,
+      &::before,
+      &::after {
+        background-color: $primary;
+      }
+  }
 }
