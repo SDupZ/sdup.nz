@@ -32,11 +32,11 @@
             {% for project in projects %}
                 {% if forloop.counter|divisibleby:3 %}
                     <div class="grid__item one-whole">
-                        {% include 'includes/_work-tile.html' with size='full' font_color=project.font_color time_line=project.time_line img=project.icon.url  title=project.title blurb=project.blurb date=project.created|date:'N d, Y' slug=project.slug color=project.get_rgba %}
+                        {% include 'includes/_work-tile.html' with size='full' icon_opacity=project.icon_opacity font_color=project.font_color time_line=project.time_line img=project.icon.url  title=project.title blurb=project.blurb date=project.created|date:'N d, Y' slug=project.slug color=project.get_rgba %}
                     </div>
                 {% else %}
                     <div class="grid__item one-whole tablet--one-half">
-                        {% include 'includes/_work-tile.html' with font_color=project.font_color img=project.icon.url time_line=project.time_line title=project.title blurb=project.blurb date=project.created|date:'N d, Y' slug=project.slug color=project.get_rgba %}
+                        {% include 'includes/_work-tile.html' with icon_opacity=project.icon_opacity font_color=project.font_color img=project.icon.url time_line=project.time_line title=project.title blurb=project.blurb date=project.created|date:'N d, Y' slug=project.slug color=project.get_rgba %}
                     </div>
                 {% endif %}
 

@@ -1,7 +1,7 @@
 <a href="{% url 'project' slug %}" class="base-card work-card ">
     <div class="work-tile-wrapper {% if size == 'full' %}work-tile-wrapper--full{% endif %}"
-    style="opacity: 0.7; background-image: linear-gradient(rgba({{color.0}}, {{color.1}}, {{color.2}}, {{color.3}}), rgba({{color.0}}, {{color.1}}, {{color.2}}, {{color.3}}))">
-        <div class="work-img">
+    style="background-image: linear-gradient(rgba({{color.0}}, {{color.1}}, {{color.2}}, {{color.3}}), rgba({{color.0}}, {{color.1}}, {{color.2}}, {{color.3}}))">
+        <div class="work-img" {% if icon_opacity %}style="opacity: {{ icon_opacity }}"{% endif %}>
           <img src='{{ img }}' />
         </div>
         <div class="work-text {% if size == 'full' %}work-text--full{% endif %}">

@@ -23,11 +23,14 @@ class Project(models.Model):
     time_line = models.CharField(blank=True, max_length=150)
 
     icon = FilerImageField(blank=True, null=True, related_name="project_icon_image")
+    icon_opacity = models.DecimalField(decimal_places=1, max_digits=2, default=1)
 
     color = ColorField(default='#FF0000')
     font_color = models.CharField(max_length=2, choices=FONT_CHOICES, default=FONT_WHITE,)
 
     color_alpha = models.DecimalField(decimal_places=1, max_digits=2, default=1)
+
+
 
     header_image = FilerImageField(blank=True, null=True, related_name="project_header_image")
     content = RichTextField(blank=True, null=True)
