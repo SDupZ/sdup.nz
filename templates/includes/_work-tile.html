@@ -2,7 +2,7 @@
     <div class="work-tile-wrapper {% if size == 'full' %}work-tile-wrapper--full{% endif %}"
     style="opacity: 0.7; background-image: linear-gradient(rgba({{color.0}}, {{color.1}}, {{color.2}}, {{color.3}}), rgba({{color.0}}, {{color.1}}, {{color.2}}, {{color.3}}))">
         <div class="work-img">
-          <img src='https://cdn.yamaha-motor.eu/product_assets/2017/YZF600R6/950-75/2017-Yamaha-YZF-R6-EU-Race-Blu-VR360-022.jpg' />
+          <img src='{{ img }}' />
         </div>
         <div class="work-text {% if size == 'full' %}work-text--full{% endif %}">
             <h1 class="h1 {% if font_color == 'FW' %} white {% endif %}">{{ title }} </h1>
