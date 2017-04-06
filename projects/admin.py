@@ -10,7 +10,7 @@ class ProjectAdmin(SortableAdminMixin, admin.ModelAdmin):
 
     fieldsets = (
         ('Fields', {
-            'fields': ('title', 'slug', 'blurb', 'time_line', 'icon', 'font_color', 'color', 'color_alpha', 'header_image', 'content',),
+            'fields': ('title', 'slug', 'blurb', 'time_line', 'icon', 'icon_opacity', 'font_color', 'color', 'color_alpha', 'header_image', 'content',),
         }),
         ('Admin', {
             'classes': ('collapse',),
