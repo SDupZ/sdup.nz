@@ -4797,7 +4797,7 @@ body {
 a, h1, h2, h3, h4, h5, h6 {
   font-family: "Oxygen", serif; }
 
-p, small {
+p, small, ul, li {
   font-family: "Roboto", sans-serif; }
 
 h1 {
@@ -5357,6 +5357,9 @@ figcaption {
 
 .lowercase {
   text-transform: lowercase; }
+
+.u-text-center {
+  text-align: center; }
 
 .blog__content {
   padding-left: 26px;
