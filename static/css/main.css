@@ -5271,7 +5271,7 @@ div.menu li.animate {
   margin: 0; }
   @media only screen and (min-width: 768px) {
     .image__double {
-      max-width: 50%; } }
+      max-width: 49%; } }
   .image__double img {
     width: 100%; }
 
