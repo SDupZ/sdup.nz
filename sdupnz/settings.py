@@ -168,6 +168,7 @@ CKEDITOR_CONFIGS = {
         'entities_latin': False,
         'entities_additional': False,
         'format_tags': 'p;h1;h2;h3;h4;pre',
+        'allowedContent': True,
         'extraAllowedContent': 'figcaption figure(*){*}[*]',
     },
 }
