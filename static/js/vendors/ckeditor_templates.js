@@ -6,6 +6,14 @@
 var galleries = $('.gallery_data');
 var tmp = [
             {
+                title: 'Single image',
+                html:
+                    "<figure class='image__single u-text-center'>" +
+                        "<img src='/static/img/fallback/placeholder.png' />" +
+                        "<figcaption>Image caption</figcaption>" +
+                    "</figure>"
+            },
+            {
                 title: 'Right aligned image',
                 html:
                     "<figure class='image__float--right'>" +

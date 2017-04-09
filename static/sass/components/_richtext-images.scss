@@ -12,6 +12,12 @@
     }
 }
 
+.image__single {
+    img {
+      max-width: 100%;
+    }
+}
+
 .image__float--left {
     margin: 0 auto;
 

@@ -5240,6 +5240,9 @@ div.menu li.animate {
       padding: 20px;
       max-width: 50%; } }
 
+.image__single img {
+  max-width: 100%; }
+
 .image__float--left {
   margin: 0 auto; }
   .image__float--left img {

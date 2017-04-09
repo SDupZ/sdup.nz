@@ -15,6 +15,7 @@ https://github.com/sass/node-sass/blob/master/README.md
 `npm install node-sass`
 `node compile.js`
 
+pg_dump -i -U docker -F c -b -v -f 'latest_database_backup.sql' postgres
 
  dropdb -U postgres postgres
  createdb -O postgres -U postgres postgres -T template0 -E 'UTF8'
