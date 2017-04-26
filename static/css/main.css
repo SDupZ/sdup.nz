@@ -4794,10 +4794,16 @@ html {
 body {
   margin: 0; }
 
-a, h1, h2, h3, h4, h5, h6 {
-  font-family: "Oxygen", serif; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oxygen", serif;
+  font-weight: 400;
+  color: #212121; }
 
-p, small, ul, li {
+a, small {
+  font-family: "Oxygen", serif;
+  font-weight: 400; }
+
+p, ul, li {
   font-family: "Roboto", sans-serif; }
 
 h1 {
@@ -4940,39 +4946,11 @@ small {
   display: flex;
   justify-content: space-between; }
 
-.mega__heading, .h1, .h2, .h3, .h4, .h5, small {
-  font-family: 'Oxygen', sans-serif;
-  display: block;
-  color: #000; }
-
 .mega__heading {
   font-size: 3em;
   margin-bottom: 10px;
   margin-left: 30px;
   margin-right: 30px; }
-
-.h1 {
-  font-size: 2em;
-  line-height: 36px;
-  margin: 30px auto; }
-
-.h2 {
-  font-size: 2em; }
-
-.h3 {
-  font-size: 1.8em; }
-
-.h4 {
-  font-size: 1.5em; }
-
-.h5 {
-  font-size: 14px;
-  color: #72808E; }
-
-small {
-  color: #4f5d6b;
-  font-size: 0.9em;
-  font-weight: 500; }
 
 .header {
   display: flex;

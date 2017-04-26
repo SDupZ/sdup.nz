@@ -5,7 +5,7 @@
           <img src='{{ img }}' />
         </div>
         <div class="work-text {% if size == 'full' %}work-text--full{% endif %}">
-            <h1 class="h1 {% if font_color == 'FW' %} white {% endif %}">{{ title }} </h1>
+            <h1 class="{% if font_color == 'FW' %}white {% endif %}">{{ title }}</h1>
             <figcaption class="{% if font_color == 'FW' %} white {% endif %}">{{ time_line }}</figcaption>
             <small class="{% if font_color == 'FW' %} white {% endif %}">{{ blurb }}</small>
         </div>
