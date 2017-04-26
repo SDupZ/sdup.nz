@@ -4808,7 +4808,8 @@ p, ul, li {
 
 h1 {
   font-size: 480pxpx;
-  font-size: 48pxrem; }
+  font-size: 48pxrem;
+  margin-bottom: 5px; }
 
 h2 {
   font-size: 360pxpx;
