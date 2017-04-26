@@ -4788,7 +4788,7 @@
 html {
   color: #141414;
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 1.6;
   overflow-y: scroll; }
 
 body {
@@ -4813,23 +4813,28 @@ h1 {
 
 h2 {
   font-size: 360pxpx;
-  font-size: 36pxrem; }
+  font-size: 36pxrem;
+  margin-bottom: 0; }
 
 h3 {
   font-size: 320pxpx;
-  font-size: 32pxrem; }
+  font-size: 32pxrem;
+  margin-bottom: 0; }
 
 h4 {
   font-size: 280pxpx;
-  font-size: 28pxrem; }
+  font-size: 28pxrem;
+  margin-bottom: 0; }
 
 h5 {
   font-size: 240pxpx;
-  font-size: 24pxrem; }
+  font-size: 24pxrem;
+  margin-bottom: 0; }
 
 h6 {
   font-size: 200pxpx;
-  font-size: 20pxrem; }
+  font-size: 20pxrem;
+  margin-bottom: 0; }
 
 p {
   font-size: 160pxpx;
@@ -4895,8 +4900,7 @@ small {
 .base-card {
   background: white;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
-  margin-bottom: 10px; }
+  border-radius: 3px; }
   .base-card--top {
     margin-top: 20px; }
 
@@ -4932,7 +4936,7 @@ small {
   margin: 0; }
 
 .colour-strip {
-  height: 2px; }
+  height: 3px; }
 
 .footer {
   text-align: center;
@@ -5057,6 +5061,8 @@ small {
   .jumbotron p {
     color: #fff;
     margin-top: 0; }
+  .jumbotron--small {
+    height: 50vh; }
 
 div.menu-bg {
   z-index: 10;
@@ -5350,13 +5356,12 @@ figcaption {
   padding-bottom: 26px; }
 
 .blog__card {
-  margin-top: 26px;
-  overflow: auto; }
+  overflow: auto;
+  margin-bottom: 10px; }
 
 .page {
   overflow: auto;
-  background-color: #f9f9f9;
-  min-height: 90vh; }
+  background-color: #f9f9f9; }
 
 .homepage-section-leaving-soon {
   padding-top: 60px;
