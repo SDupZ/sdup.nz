@@ -30,7 +30,8 @@
     <div class="container">
         <div class="grid grid--center">
             {% for project in projects %}
-                {% if forloop.counter|divisibleby:3 %}
+                {# % if forloop.counter|divisibleby:3 % #}
+		{% if forloop.counter == 3 %}
                     <div class="grid__item one-whole">
                         {% include 'includes/_work-tile.html' with size='full' icon_opacity=project.icon_opacity font_color=project.font_color time_line=project.time_line img=project.icon.url  title=project.title blurb=project.blurb date=project.created|date:'N d, Y' slug=project.slug color=project.get_rgba %}
                     </div>
