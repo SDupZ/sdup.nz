@@ -10,9 +10,7 @@
     <div class="page page--blog">
         <div class="container container--thin">
             <div class="base-card blog__content">
-                <h1 class="h1">
-                    {{ blog.title }}
-                </h1>
+                <h1>{{ blog.title }}</h1>
                 <p>{{ blog.created|date:'N d, Y'}}</p>
                 <p>{{ blog.content|safe }}</p>
             </div>
