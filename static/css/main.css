@@ -4786,7 +4786,7 @@
   clip: auto; }
 
 html {
-  color: #000;
+  color: #141414;
   font-size: 1em;
   line-height: 1.4;
   overflow-y: scroll; }
@@ -4797,7 +4797,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Oxygen", serif;
   font-weight: 400;
-  color: #212121; }
+  color: #141414; }
 
 a, small {
   font-family: "Oxygen", serif;
@@ -4867,7 +4867,7 @@ small {
 
 .blog-card {
   margin: 20px;
-  color: #000;
+  color: #141414;
   text-align: justify;
   display: block;
   text-decoration: none; }
@@ -4899,7 +4899,7 @@ small {
     margin-top: 20px; }
 
 .contact-card {
-  color: #000;
+  color: #141414;
   text-align: justify;
   display: block;
   text-decoration: none; }
@@ -5283,7 +5283,7 @@ figcaption {
   font-size: 14px; }
 
 .work-card {
-  color: #000;
+  color: #141414;
   text-align: justify;
   display: block;
   text-decoration: none; }
@@ -5316,7 +5316,7 @@ figcaption {
       transform: scale(1.05); }
     .work-card .work-tile-wrapper:hover .work-text h1 {
       transform: translateY(-5px); }
-    .work-card .work-tile-wrapper:hover .work-text figcaption, .work-card .work-tile-wrapper:hover small {
+    .work-card .work-tile-wrapper:hover .work-text figcaption, .work-card .work-tile-wrapper:hover small, .work-card .work-tile-wrapper:hover .hover-down {
       transform: translateY(5px); }
   .work-card .work-img {
     position: absolute;
