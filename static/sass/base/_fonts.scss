@@ -69,4 +69,5 @@ p {
 
 small {
   @include font-size($font-size-small);
+  display: block;
 }

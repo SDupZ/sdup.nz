@@ -4836,7 +4836,8 @@ p {
 
 small {
   font-size: 120pxpx;
-  font-size: 12pxrem; }
+  font-size: 12pxrem;
+  display: block; }
 
 .container {
   max-width: 1140px;
@@ -5316,7 +5317,7 @@ figcaption {
       transform: scale(1.05); }
     .work-card .work-tile-wrapper:hover .work-text h1 {
       transform: translateY(-5px); }
-    .work-card .work-tile-wrapper:hover .work-text figcaption, .work-card .work-tile-wrapper:hover small, .work-card .work-tile-wrapper:hover .hover-down {
+    .work-card .work-tile-wrapper:hover .work-text figcaption, .work-card .work-tile-wrapper:hover small {
       transform: translateY(5px); }
   .work-card .work-img {
     position: absolute;
