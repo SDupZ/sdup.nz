@@ -1,6 +1,7 @@
 Django==1.10.7
 psycopg2
 uwsgi
+pylibmc
 
 django-ckeditor
 Pillow

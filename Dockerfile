@@ -7,6 +7,12 @@ RUN apt-get -y update
 
 RUN apt-get -y install nginx
 
+RUN apt-get update && apt-get install -y \
+        libmemcached11 \
+        libmemcachedutil2 \
+        libmemcached-dev \
+        libz-dev
+
 RUN ln -s /srv/www/sdupnz/sdupnz/config/nginx/sdupnz_nginx.conf /etc/nginx/sites-enabled/
 
 # add requirements.txt to the image

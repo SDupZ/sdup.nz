@@ -24,6 +24,7 @@ services:
         command: ./run_web.sh
         volumes:
             - .:/srv/www/sdupnz/sdupnz  # mount current directory inside container
+            - ./media:/srv/www/sdupnz/public-www/media
         ports:
             - "8009:8009"
         # set up links so that web knows about db, rabbit and redis
