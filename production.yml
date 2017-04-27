@@ -13,6 +13,14 @@ services:
         ports:
             - "5433:5432"
 
+    # Memcache
+    memcached:
+        restart: always
+        image: memcached
+        hostname: memcached
+        ports:
+          - "11211:11211"
+
 
     # Django web server
     web:
