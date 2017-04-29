@@ -47,12 +47,19 @@ INSTALLED_APPS = [
     'site_settings'
 ]
 
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.memcached.PyLibMCCache',
-        'LOCATION': 'memcached:11211',
+if not DEBUG:
+    CACHES = {
+        'default': {
+            'BACKEND': 'django.core.cache.backends.memcached.PyLibMCCache',
+            'LOCATION': 'memcached:11211',
+        }
     }
-}
+else:
+    CACHES = {
+        'default': {
+            'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+        }
+    }
 
 MIDDLEWARE = [
     'django.middleware.cache.UpdateCacheMiddleware',
