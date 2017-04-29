@@ -32,11 +32,7 @@
 
 
         <!-- Javascripts -->
-        <!-- Vendor -->
-        <script type="text/javascript" src="/static/js/vendors/jquery-3.1.1.min.js"></script>
-
-        <!-- Source -->
-        <script type="text/javascript" src="/static/js/src/handleMenu.js"></script>
+        <script src="{% static 'js/dist/bundle.js' %}"></script>
 
         {% block scripts %}{% endblock %}
 

@@ -1,4 +1,6 @@
-(function() {
+/* jshint esversion: 6 */
+
+export default function() {
     var active = false;
     var menuIcon = $('.menu-icon');
     var body = $('body');
@@ -44,4 +46,4 @@
         body.removeClass("noscroll");
 
     }
-}());
+}
