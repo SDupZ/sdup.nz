@@ -19,6 +19,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'staging.sdup.nz',
     'sdup.nz',
+    '*',
 ]
 
 
@@ -51,6 +52,7 @@ CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.memcached.PyLibMCCache',
         'LOCATION': 'memcached:11211',
+        'TIMEOUT': None,
     }
 }
 
