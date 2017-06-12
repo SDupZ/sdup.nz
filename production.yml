@@ -12,6 +12,8 @@ services:
             - POSTGRES_DB=postgres
         ports:
             - "5433:5432"
+        networks:
+            - back
 
     # Memcache
     memcached:
@@ -19,7 +21,9 @@ services:
         image: memcached
         hostname: memcached
         ports:
-          - "11211:11211"
+            - "11211:11211"
+        networks:
+            - back
 
 
     # Django web server
@@ -29,6 +33,9 @@ services:
             context: .
             dockerfile: Dockerfile
         hostname: web
+        environment:
+            - VIRTUAL_HOST=sdup.nz
+            - VIRTUAL_PORT=8009
         command: ./run_web.sh
         volumes:
             - .:/srv/www/sdupnz/sdupnz  # mount current directory inside container
@@ -40,3 +47,13 @@ services:
             - db
         depends_on:
             - db
+        networks:
+            - reverse-proxy
+            - back
+
+networks:
+    reverse-proxy:
+        external:
+            name: reverse-proxy
+    back:
+        driver: bridge
